@@ -2,6 +2,7 @@ import { Avatar } from "@/components/ui/avatar"
 import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
 import { ArrowRight, Home, Mic, Clock } from "lucide-react"
+import Link from "next/link"
 
 export default function HomePage() {
   return (
@@ -18,9 +19,11 @@ export default function HomePage() {
       </div>
 
       {/* New Analysis Button */}
-      <Button variant="outline" className="w-full bg-white text-black rounded-full py-6 mb-6 font-medium">
-        New Analysis
-      </Button>
+      <Link href="/analysis">
+        <Button variant="outline" className="w-full bg-white text-black rounded-full py-6 mb-6 font-medium">
+          New Analysis
+        </Button>
+      </Link>
 
       {/* Chat History Section */}
       <div className="mb-6">
